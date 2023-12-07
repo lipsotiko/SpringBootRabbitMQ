@@ -1,0 +1,19 @@
+spring:
+  amqp:
+    deserialization:
+      trust:
+        all: true
+edxm:
+  direct:
+    queue: "ten"
+    exchange: "ten-exchange"
+  topic:
+    queue-a: "twenty"
+    queue-b: "twenty"
+    exchange-a: "twenty-exchange-a"
+    exchange-b: "twenty-exchange-b"
+  fanout:
+    exchange: "thirty"
+    queue-a: "thirty"
+    queue-b: "thirty-exchange"
+
