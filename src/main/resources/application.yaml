@@ -1,19 +1,7 @@
 spring:
-  amqp:
-    deserialization:
-      trust:
-        all: true
-edxm:
-  direct:
-    queue: "ten"
-    exchange: "ten-exchange"
-  topic:
-    queue-a: "twenty"
-    queue-b: "twenty"
-    exchange-a: "twenty-exchange-a"
-    exchange-b: "twenty-exchange-b"
-  fanout:
-    exchange: "thirty"
-    queue-a: "thirty"
-    queue-b: "thirty-exchange"
-
+  rabbitmq:
+    host: rabbitmq-exam.rmq3.cloudamqp.com
+    port: 5672
+    username: student
+    password: XYR4yqc.cxh4zug6vje
+    virtual-host: mxifnklj
